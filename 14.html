@@ -2,18 +2,30 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>13 연산자 우선순위</title>
-    <script src="js/lecture13.js"></script>
+    <title>14 String이어붙이기</title>
+    <script src="js/lecture01.js"></script>
   </head>
   <body>
-*%/ 가먼저 계산이된다
+문자길이 측정법
+변수.length
+변수["length"];
 
-==연산되는 순서==
+문자합치기
+  변수1.concat(변수2);
+두개합치기
+  변수1.concat(변수2).concat("문자열도가능");
 
-1.Logical Operator : NOT(!)
-2.Arithmetic Operator : *,/,%,+,-
-3.relational Operator : >,<,<=...==,!=
-4.Logical Operator :AND(&&)
-5.Logical Operator : OR(||)
+  "문자열2".concat("문자열"); = "문자열2 문자열3"
+  "문자열2".length; 가능
+간편한 방법
+  문자열1+문자열2;
+
+번외
+ "문자열" + 숫자 = 숫자 + "문자열";
+
+=====실습예제====
+var word = a + b;
+var word_lenght = word.length; 성립
+var word.lenth = word_length; 성립안함
   </body>
 </html>

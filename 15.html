@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>15 string 다루기</title>
+    <script src="js/lecture01.js"></script>
+  </head>
+한 문자열에 접근하기.
+var str="abcdabcd";
+str.charAt(0); => 출력시 a가나옴
+str.charAt(범위에넘는수 0or 음수) = "" ; 빈값이 출력됨
+
+str[1]; => "b" 가출력됨
+str[범위 넘는수] => undefined;
+
+str.substring(2,4);=>"cd" 가 출력// 두개가 출력
+str.substr(2,4); =>"cdea"가 출력
+
+str.substring(2) => 앞에서두번째부터 출력 substr도 동일
+
+str.substr(-7); => 뒤에서부터 출력
+=====================
+str.indexOf("bc");=>1이반환이됨
+str.lastInOf("bc")=>6이반환이됨
+str.lastInOf("f")=>없는 문자 출력하면 -1이 반환이됨
+========문제1========
+function firstLetter(str){
+    return str.charAt(0);
+} 정답
+function firstLetter(str){
+    return firstLetter.charAt(0);
+} 오답
+=======문제2============
+function first2Letters(str){
+    return str.substring(0,2);
+} 정답
+
+function first2Letters(str){
+    return str.substring(0,1);
+} 오답 하나만출력
+  </body>
+</html>
