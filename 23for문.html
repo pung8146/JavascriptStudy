@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2강 for문</title>
+    <script src="js/lecture01.js"></script>
+    <script type="text/javascript">
+    var array = [1,2,3,4,5,6,7,8,9,10];
+
+    var i = 0; // 반복문 전 실행될 초기 코드
+    while ( i < array.length ){ // 조건식
+
+      // 반복 실행될 코드
+      console.log( array[i]);
+
+      i++; // 반복문 코드가 한번 실행되고 나면 실행될 업데이트 구문
+    }
+
+    for (var i = 0; i< array.length ; i++){
+
+      // 반복 실행될 코드
+      console.log( array[i] + "for문") ;
+    }
+    </script>
+  </head>
+  <body>
+  For 문에 초기화구문은 무조건 한번실행이됨;
+  for문에서 coutinue;문을 만나면 update구문으로 이동
+
+  while문에서 continue;문을 만나면 반복실행 코드의끝으로 이동한다음 . 바로 조건식검사;
+
+  ---문제 ===
+  var cost = [ 85, 42, 37, 10, 22, 8, 15 ];
+var total_cost = 0;
+for (var i = 0 ; i < cost.length ; i++){
+    total_cost += cost[i];
+}
+  </body>
+</html>
