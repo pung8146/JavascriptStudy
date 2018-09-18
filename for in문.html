@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>for in 문</title>
+
+    <script type="text/javascript">
+var obj = {
+  name:"object",
+  weight:30,
+  isObject:true,
+  arr:[1,2,3],
+  obj:{property:1}
+};
+
+console.log("For 구문으로 object property 반복하기");
+
+var property_list = Object.keys(obj);
+console.log("Property List : ", property_list);
+
+for ( var i = 0; i < property_list.length ; i++){
+  var propertyName = property_list[i];
+  console.log ("\t ", propertyName , ": ",obj[propertyName]);
+}
+
+console.log("\n\nFor in 구문으로 object property 반복하기");
+
+for ( var propertyName in obj){
+  console.log( " \t", propertyName, ": ", obj[propertyName]);
+}
+    </script>
+  </head>
+  <body>
+  var obj={"속성1":1,"속성2":2}
+  Object.keys(obj);
+
+  객체를 인자를 받아서 객체속성들의 이름을 배열로만들어줌
+
+  ** in 연산자를 통해사용하면 true/false로 객체 가있는지 미리 알수있음
+  ex )
+  "name" in obj;
+*******for in 문 실습 **********
+var obj = {
+	name: "object",
+	age: 10,
+	weight: 5
+}
+var sum = 0;
+for ( var a in obj ){
+    if( typeof( obj[a] ) == "number" ){
+        sum = sum + obj[a];
+    }
+}
+
+이유:
+obj는 딕셔너리 타입의 객체이므로,
+typeof(a) 가 아니라 typeof(object[a])와 같이 key(pp)로 value를 접근해주셔야합니다.
+  </body>
+</html>

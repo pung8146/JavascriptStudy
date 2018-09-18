@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>변수의 scope</title>
+
+    <script type="text/javascript">
+      function a(){
+        var v_a = "a";
+
+        function b(){
+          var v_b="b";
+          console.log(" b : " , typeof(v), typeof(v_a), typeof(v_b));
+        }
+
+        b();
+
+        console.log(" a : " , typeof(v), typeof(v_a), typeof(v_b));
+      }
+
+      var v="v";
+
+      a();
+
+      console.log(" o : " , typeof(v), typeof(v_a), typeof(v_b));
+    </script>
+  </head>
+  <body>
+변수의 scope는 function의 scope를 따른다.
+-> 객체 (변수) 는 선언된 함수 안에서만 접근이 가능하다.
+  </body>
+</html>

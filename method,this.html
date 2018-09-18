@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>method, this</title>
+    <script type="text/javascript">
+  function f(){
+    console.log(this);
+    console.log("f is called");
+
+  }
+
+  var o = {name : "object" , method:f};
+
+  f();
+  o.method();
+    </script>
+  </head>
+  <body>
+this 는 예약어
+일반적인 함수를 호출할 때, 해당 함수 내부에서 사용된 this는
+전역객체(브라우저의 경우 window객체 )에서 바인딩된다.
+  </body>
+</html>

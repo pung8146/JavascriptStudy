@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>변수의 shadowing</title>
+    <script type="text/javascript">
+  function shadowing_exmaple(){
+    console.log("F", val);
+    val++;
+  }
+
+  var val = 0;
+  shadowing_exmaple();
+  console.log("0" , val);
+    </script>
+  </head>
+  <body>
+function name
+ // 함수 안에서만 값이 유지되는 변수
+   var in_function_var;
+
+   //여러 함수의 값이 유지되면서
+   // 사용되는 변수
+   var out_function_var;
+-----문제---
+function printTimesTable(a){
+    var i = 1;
+	for( i = 1 ; i <= 9 ; i++ ){
+		console.log( a + " * " + i + " = " + a*i );
+
+	}
+}
+
+for( var i = 2 ; i <= 9 ; i++ ){
+	printTimesTable(i);
+
+}
+
+var i = 1 ; // 해답
+  </body>
+</html>

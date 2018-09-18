@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>closure(클로저)</title>
+    <script type="text/javascript">
+      function makeCounterFunction(initVal){
+        var count = initVal;
+        function Increase(){
+          count++;
+          console.log(count);
+        }
+        return Increase;
+      }
+
+      var counter1 = makeCounterFunction(0);
+      var counter2 = makeCounterFunction(10);
+
+      counter1();
+      counter2();
+    </script>
+  </head>
+  <body>
+  closure(클로저)
+  함수와 envieronment 로구성
+
+클로져는 다른 언어의 private 키워드와 비슷한 역할을 합니다. (private 변수는 외부에서 접근할 수 없는 변수이지요)
+
+전역 변수를 줄여주기때문에, 변수끼리 충돌하는 것(같은 이름을 가진 변수를 여러개 생성하는 등)을 막을 수 있습니다.
+
+자바스크립트 개발 전에는 잘 안와 닿으실 수 있습니다.
+
+자바스크립트에는 이런 기능도 있구나!하고 넘어가시고, 나중에 클로져가 필요할 때 다시 한 번 찾아오세요~
+  </body>
+</html>
