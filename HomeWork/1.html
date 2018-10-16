@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>1차과제</title>
+  <script type="text/javascript">
+
+      var d = new Date.document.getElementById("#birth"); ;
+      var day = d.getDay()
+
+  </script>
 </head>
 <body>
-<h1>문제 1. 행운의 색 출력!</h1>
-<h3>생년월일을 입력하면 그 요일에 맟추어 색깔이 출력되게 하세요</h3>
-<form action="textarea"></form>
+<h1>문제 1. 나는 무슨요일에 태어났을까?</h1>
+<h3>생년월일을 입력하면 요일이 출력되게 해주세요.</h3>
+<form name="birth" method="get" action="1.html">
+  <input type="text" id="birth"><input type="button" onclick="alert(day)" value="확인하기">
+</form>
+<br>
+
 </body>
+
 </html>

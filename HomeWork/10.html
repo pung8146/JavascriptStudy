@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>practice10</title>
+  </head>
+  <body>
+    <input type="text" name="" value="" id="input1">
+    <input type="button" name="" value="입력" onclick="call()">
+    <div id = "div1">
+    </div>
+    <div id = "div2">
+    </div>
+    <script type="text/javascript">
+      function call(){
+      //  var birth = prompt("생년월일을 입력해주세요","6자리 입력");
+      var year;
+        var birth = document.getElementById("input1").value;
+      if(birth!=""){
+        if(parseInt(birth.substr(0,2))>=00&&parseInt(birth.substr(0,2))<=50){
+        var temp= document.getElementById("div1");
+        var a = birth.substr(0,2);
+        var b = birth.substr(2,2);
+        var c = birth.substr(4,2);
+        //temp.innerHTML = birth.length;
+        temp.innerHTML = "생일:20"+a+"년 "+b+"월 "+c+"일";
+        year = "20"+a;
+        }
+        else{
+          var temp= document.getElementById("div1");
+          var a = birth.substr(0,2);
+          var b = birth.substr(2,2);
+          var c = birth.substr(4,2);
+          //temp.innerHTML = birth.length;
+          temp.innerHTML = "생일:19"+a+"년 "+b+"월 "+c+"일";
+          year = "19"+a;
+        }
+        var date = new Date();
+        var arr =  date.toString().split(" ");
+        var t = parseInt(arr[3])- parseInt(year);
+        document.getElementById("div2").innerHTML ="나이:"+ t+"살";
+      }
+      }
+    </script>
+  </body>
+</html>
