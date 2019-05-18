@@ -1,0 +1,4 @@
+es5 / es6 /es 2016 ... 등은 ECMASe..
+Specification 의 버젼을 나타내는것 
+Specification 은 JS의 안내 책자 같은걸로 JS는 중앙집권적 언어이기에
+하나에서 업데이트 되면 다른것들도 적용이 되기때문이다.
