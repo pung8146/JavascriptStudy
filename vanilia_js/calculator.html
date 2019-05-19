@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  calculator
+</body>
+
+<script>
+const calculator = {
+  plus: function(a, b){
+    return a + b;
+  },
+  minus: function(a, b){
+    return a - b;
+  },
+  multply: function(a, b){
+    return a * b;
+  },
+  division: function(a, b){
+    return a / b ;
+  },
+  power: function(a, b){
+    return a ** b ;
+  }
+}
+
+const dog = calculator.plus(5, 5);
+const cat = calculator.minus(5, 5);
+const cow = calculator.multply(5, 5);
+const pig = calculator.division(5, 5);
+const pow = calculator.power(4, 2);
+
+console.log(dog);
+console.log(cat);
+console.log(cow);
+console.log(pig);
+console.log(pow);
+</script>
+</html> 

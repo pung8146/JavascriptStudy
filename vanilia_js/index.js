@@ -27,12 +27,24 @@ function sayHello2(name , age){
 
 sayHello2("Sanghoon", 15);
 
-// return 
+// return : ex
 
 function sayHello3(name , age){
-    console.log(`Hello ${name} you are ${age} years old`);
+    return `Hello ${name} you are ${age} years old`;
 }
 
 const chiken = sayHello3("박상훈" , 26);
 
 console.log(chiken) 
+
+// 객체 만들기 a,b 아무이름 으로사용해도됨
+
+const calculator = {
+    plus: function(a, b) {
+        return a + b; 
+    }
+}
+
+//  수업 내용 주석 처리console.log(chiken);
+const plus = calculator.plus(5, 5)
+console.log(plus)
