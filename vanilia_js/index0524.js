@@ -9,7 +9,7 @@ if(10 > 5){
 // prompt 와 alert은 잘안쓰는 오래된 자바스크ㅡ립트
 const age = prompt("how ald are you")
 
-const.log(age);
+console.log(age);
 
 if(age > 18){
     console.log("you can eat");
