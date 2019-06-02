@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3_1 : 시계만들기</title>
+    <link rel="stylesheet" href="css/3_1.css"> 
+</head>
+<style>
+.form,
+.greetings{
+    display: none;
+}
+.showing{
+    display: none;
+}
+</style>
+<body>
+    <div class="js-clock">
+        <h1>00:00</h1>
+    </div>
+    <form class="js-form form">
+        <input type="text" placeholder="What is your name?">
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+
+    <script src="js/clock.js"></script>
+    <script src="js/gretting.js"></script>
+</body>
+</html>
+
+<!-- 
+    3_1 강좌에서 배운것
+        1., 로 const 중복을 생략가능 할 수 있음
+        2. const사용때 const 소문자 = new 대문자();
+        3. init (); 초기화 시키고 사용했으며
+        4. innerHTML로 html에서 텍스트로 표현했음
+        5. `` {비택 사용법 다시 복습}
+        6. date 은 함수 
+        7. 만약에 date으로 한번의 시간대 함수를 저장했으면 계속 그시간대의 분이 불려짐
+    3_2 강좌에서 배운것
+        1.setInterval(인자,1000) 인자로불려진 함수를 정해논 시간 마다 실행
+        2.미니 if ( <  or > ) ? : 순으로 사용
+        2-1.ex 10이하일때 실행시킬때 ( ex < 10 ? `${함수}` : 함수)
+            10이하 이면 첫번째를 시키고 아니면 뒤에꺼를 실행시켜라
+ -->
